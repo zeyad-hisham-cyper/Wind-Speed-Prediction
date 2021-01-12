@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  /*background-image: background-image: url({{url_for('static', filename='home.jpg')}});*/
+}
+.myButton {
+	background-color:#263238;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+  	text-shadow:0px 1px 0px #2f6627;
+  	margin: 0;
+}
+.myButton:hover {
+  background-color:#92e3a9;
+  color: #263238;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.buttons{
+  margin-left: 35px;
+}
+.img{
+	display: flexbox;
+	float: left;
+
+}

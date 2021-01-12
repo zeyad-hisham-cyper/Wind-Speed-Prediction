@@ -1,0 +1,50 @@
+<html>
+    <head>
+      <style>
+        body
+        {
+          background-image: url({{url_for('static', filename='hoommme.jpg')}});
+        }
+      </style>
+        <meta charset="UTF-8">
+        <br><br>
+        <title>Wind Speed Predictor</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"">
+    </head>
+    <body>
+      
+        <center>
+
+        <h1> Wind Speed prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b>
+             <input type="text", name='a', placeholder="Active Power">
+             <input type="text", name='b', placeholder="Ambient Temperatue">
+             <input type="text", name='c', placeholder="Bearing Shaft Temperature"> <br><br>
+             <input type="text", name='d', placeholder="Blade1PitchAngle"> 
+             <input type="text", name='e', placeholder="Blade2PitchAngle"> 
+             <input type="text", name='f', placeholder="Blade3PitchAngle"> <br><br>
+             <input type="text", name='g', placeholder="GearboxBearingTemp"> 
+             <input type="text", name='h', placeholder="GearboxOilTemperature">
+             <input type="text", name='i', placeholder="GeneratorRPM"> <br><br>
+             <input type="text", name='j', placeholder="GeneratorWinding1Temp">
+             <input type="text", name='k', placeholder="GeneratorWinding2Temp">
+             <input type="text", name='l', placeholder="HubTemperature"> <br><br>
+             <input type="text", name='m', placeholder="MainBoxTemperature"> 
+             <input type="text", name='n', placeholder="NacellePosition">
+             <input type="text", name='o', placeholder="ReactivePower"> <br><br>
+             <input type="text", name='p', placeholder="RotorRPM"> 
+             <input type="text", name='q', placeholder="Wind Direction"> <br><br><br>
+            
+           </b>
+            <input type="submit" , value='predict!' >
+        </form>        
+    </center>
+      <div class="buttons">
+        <a href="#" class="myButton">Portfolio</a><br><br>
+        <a href="#" class="myButton">Poster</a><br><br> 
+        <a href="#" class="myButton">Abou Us</a>
+      </div>
+    </body>
+</html>
